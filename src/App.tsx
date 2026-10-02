@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Facebook, Instagram, Linkedin,
+  ArrowDown, ArrowRight, ArrowUpRight, Facebook, Ghost, Instagram, Linkedin,
   MapPin, Menu, Music2, Phone, Mail, Sparkles, X,
 } from 'lucide-react';
 import { siteConfig } from '@/config/siteConfig';
@@ -9,7 +9,6 @@ import keychainsImage from './assets/products/gs-portecles-resine.png';
 import pouchImage from './assets/products/gs-pochette-telephone.png';
 import combImage from './assets/products/gs-peigne-resine.png';
 import watchImage from './assets/products/gs-montre-personnalisee.png';
-import chainImage from './assets/products/gs-gourmette-chaine.png';
 import decorImage from './assets/products/gs-deco-resine.png';
 import earringsImage from './assets/products/gs-boucles-resine.png';
 import soapImage from './assets/products/gs-savons-artisanaux.png';
@@ -26,10 +25,10 @@ const collections = [
   },
   {
     number: '02',
-    title: 'Colliers & gourmettes',
-    detail: 'Des accessoires à personnaliser',
-    image: chainImage,
-    alt: 'Gourmette dorée présentée sur un tissu clair',
+    title: 'Plateaux fleuris en résine',
+    detail: 'Fleurs séchées et éclat doré dans une pièce unique',
+    image: decorImage,
+    alt: 'Plateau fleuri en résine transparente avec des inclusions dorées',
   },
   {
     number: '03',
@@ -61,10 +60,17 @@ const collections = [
   },
   {
     number: '07',
-    title: 'Objets décoratifs',
-    detail: 'Plateaux, fleurs séchées et pièces uniques',
-    image: decorImage,
-    alt: 'Plateau décoratif en résine transparente avec fleurs séchées',
+    title: 'Fleurs encapsulées en résine',
+    detail: 'Une composition florale brillante et délicate',
+    image: 'https://images.pexels.com/photos/11844131/pexels-photo-11844131.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    alt: 'Composition de fleurs séchées jaunes conservées dans la résine',
+  },
+  {
+    number: '08',
+    title: 'Décoration murale en résine',
+    detail: 'Des fleurs pressées mises en valeur dans un cadre',
+    image: 'https://images.pexels.com/photos/10753701/pexels-photo-10753701.jpeg?auto=compress&cs=tinysrgb&w=1100',
+    alt: 'Composition de fleurs séchées encadrée dans une création murale en résine',
   },
 ];
 
@@ -123,6 +129,7 @@ const socialLinks = [
   { label: 'Instagram', Icon: Instagram, href: siteConfig.instagram },
   { label: 'Facebook', Icon: Facebook, href: siteConfig.facebook },
   { label: 'TikTok', Icon: Music2, href: siteConfig.tiktok },
+  { label: 'Snapchat', Icon: Ghost, href: siteConfig.snapchat },
   { label: 'LinkedIn', Icon: Linkedin, href: siteConfig.linkedin },
 ];
 
@@ -214,7 +221,7 @@ function App() {
               <p className="showcase-kicker"><span /> L’univers GS ART</p>
               <h2>Des créations pour<br /><em>chaque envie.</em></h2>
             </div>
-            <p>Boucles d’oreilles, colliers, pochettes, peignes, montres et porte-clés : découvrez les créations en résine époxy de GS ART.</p>
+            <p>Boucles d’oreilles, pochettes, peignes, montres, porte-clés et bien d’autres créations en résine époxy, réalisées par GS ART.</p>
           </div>
           <div className="showcase-creation-grid">
             {collections.map((collection) => (
@@ -302,7 +309,8 @@ function App() {
               <select name="creation" defaultValue="" required>
                 <option value="" disabled>Choisissez une création</option>
                 <option>Boucles d’oreilles</option><option>Porte-clés en résine</option><option>Peigne en résine</option>
-                <option>Pochette personnalisée</option><option>Collier ou gourmette</option>
+                <option>Pochette personnalisée</option><option>Plateau fleuri en résine</option>
+                <option>Porte-bijoux personnalisé</option>
                 <option>Montre personnalisée</option><option>Objet décoratif</option>
                 <option>Autre création sur mesure</option>
               </select>
