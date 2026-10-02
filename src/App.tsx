@@ -5,11 +5,15 @@ import {
 } from 'lucide-react';
 import { siteConfig } from '@/config/siteConfig';
 import logoImage from './assets/images/IMG-20260913-WA0029.jpg';
-import keychainsImage from './assets/products/gs-portecles-resine.png';
-import pouchImage from './assets/products/gs-pochette-telephone.png';
-import combImage from './assets/products/gs-peigne-resine.png';
+import floralFrameImage from './assets/images/0a113fd2ba558258de29ccc753f139e3.jpg';
+import africaResinImage from './assets/images/0c7d31c0997141067f630173c17b117d.jpg';
+import floralKeychainPhoto from './assets/images/805e1854acd0933be94cc75954454fa5.jpg';
+import floralClockImage from './assets/images/e3a22cd6dccad69146d941e6801db070.jpg';
+import floralTableImage from './assets/images/f8ab8e09c8344267cf779c5bbab4651d.jpg';
+import braceletPhoto from './assets/images/image.png';
+import phoneCasePhoto from './assets/images/image copy.png';
+import necklacePhoto from './assets/images/image copy 2.png';
 import watchImage from './assets/products/gs-montre-personnalisee.png';
-import decorImage from './assets/products/gs-deco-resine.png';
 import earringsImage from './assets/products/gs-boucles-resine.png';
 import soapImage from './assets/products/gs-savons-artisanaux.png';
 import vinegarImage from './assets/products/gs-vinaigre-cuisine.png';
@@ -25,24 +29,24 @@ const collections = [
   },
   {
     number: '02',
-    title: 'Plateaux fleuris en résine',
-    detail: 'Fleurs séchées et éclat doré dans une pièce unique',
-    image: decorImage,
-    alt: 'Plateau fleuri en résine transparente avec des inclusions dorées',
+    title: 'Bracelets en résine',
+    detail: 'Des fleurs délicates à porter au quotidien',
+    image: braceletPhoto,
+    alt: 'Bracelets fins avec fleurs séchées encapsulées dans la résine',
   },
   {
     number: '03',
-    title: 'Peignes & accessoires',
-    detail: 'Des finitions brillantes et originales',
-    image: combImage,
-    alt: 'Peigne en résine transparente décoré de fleurs séchées',
+    title: 'Colliers en résine',
+    detail: 'Un pendentif fleuri à offrir ou à porter',
+    image: necklacePhoto,
+    alt: 'Collier avec pendentif cœur bleu en résine, fleur séchée et éclats dorés',
   },
   {
     number: '04',
-    title: 'Pochettes personnalisées',
-    detail: 'Un accessoire fleuri imaginé selon vos envies',
-    image: pouchImage,
-    alt: 'Pochette pour téléphone décorée de fleurs en relief',
+    title: 'Coques de téléphone personnalisées',
+    detail: 'Des effets marbrés et des détails selon vos envies',
+    image: phoneCasePhoto,
+    alt: 'Coque de téléphone marbrée rose et turquoise avec des éclats dorés',
   },
   {
     number: '05',
@@ -55,22 +59,22 @@ const collections = [
     number: '06',
     title: 'Porte-clés en résine',
     detail: 'Des petits cadeaux à garder près de soi',
-    image: keychainsImage,
-    alt: 'Collection de porte-clés en résine et fleurs séchées',
+    image: floralKeychainPhoto,
+    alt: 'Porte-clés personnalisé en résine avec fleurs séchées et détails dorés',
   },
   {
     number: '07',
-    title: 'Fleurs encapsulées en résine',
-    detail: 'Une composition florale brillante et délicate',
-    image: 'https://images.pexels.com/photos/11844131/pexels-photo-11844131.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Composition de fleurs séchées jaunes conservées dans la résine',
+    title: 'Horloges florales en résine',
+    detail: 'Fleurs délicates et chiffres dorés pour votre intérieur',
+    image: floralClockImage,
+    alt: 'Horloge ronde en résine transparente incrustée de fleurs roses séchées',
   },
   {
     number: '08',
     title: 'Décoration murale en résine',
-    detail: 'Des fleurs pressées mises en valeur dans un cadre',
-    image: 'https://images.pexels.com/photos/10753701/pexels-photo-10753701.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Composition de fleurs séchées encadrée dans une création murale en résine',
+    detail: 'Une pièce sculpturale aux reflets bleus et dorés',
+    image: africaResinImage,
+    alt: 'Carte de l’Afrique en résine bleue et or au-dessus d’une table assortie',
   },
 ];
 
@@ -79,7 +83,7 @@ const activities = [
     number: '01',
     title: 'Créations en résine époxy',
     text: 'Bijoux, accessoires, objets décoratifs et pièces personnalisées.',
-    image: keychainsImage,
+    image: floralKeychainPhoto,
     alt: 'Porte-clés en résine décorés de fleurs et de pigments colorés',
     className: 'activity-resin',
   },
@@ -111,8 +115,8 @@ const activities = [
     number: '05',
     title: 'Décoration & cadeaux',
     text: 'Des pièces décoratives conçues avec le même soin.',
-    image: decorImage,
-    alt: 'Plateau en résine décoré de fleurs séchées et de feuilles dorées',
+    image: africaResinImage,
+    alt: 'Décoration intérieure avec une carte de l’Afrique en résine bleue et or',
     className: 'activity-decor',
   },
 ];
@@ -197,7 +201,7 @@ function App() {
           <div className="showcase-hero-copy">
             <p className="showcase-kicker"><span /> Atelier au Cameroun</p>
             <h1>Résine époxy,<br /><em>créée pour vous.</em></h1>
-            <p className="showcase-intro">Des pièces décoratives uniques, réalisées à la main et pensées autour de vos envies.</p>
+            <p className="showcase-intro">Des créations en résine pleines de couleurs, imaginées pour vos cadeaux, mariages et anniversaires.</p>
             <div className="showcase-hero-actions">
               <a className="showcase-button" href="#creations">Découvrir nos créations <ArrowDown size={16} /></a>
               <a className="showcase-text-link" href="#contact">Parler de mon projet <ArrowRight size={16} /></a>
@@ -208,11 +212,22 @@ function App() {
             </div>
           </div>
           <div className="showcase-hero-visual">
-            <img src={decorImage} alt="Plateau en résine transparente décoré de fleurs séchées" fetchPriority="high" decoding="async" />
-            <div className="showcase-image-caption"><span>GS ART</span><span>Pièces réalisées sur mesure</span></div>
-            <span className="showcase-image-index">RÉSINE ÉPOXY</span>
+            <div className="showcase-hero-photo showcase-hero-photo-main">
+              <img src={floralTableImage} alt="Table basse en bois avec un plateau fleuri coulé dans la résine transparente" fetchPriority="high" decoding="async" />
+              <div className="showcase-image-caption"><span>GS ART</span><span>Des fleurs préservées dans la résine</span></div>
+              <span className="showcase-image-index">PIÈCES UNIQUES</span>
+            </div>
+            <div className="showcase-hero-photo showcase-hero-photo-detail" aria-hidden="true">
+              <img src={floralKeychainPhoto} alt="" decoding="async" />
+            </div>
+            <div className="showcase-hero-photo showcase-hero-photo-accent" aria-hidden="true">
+              <img src={floralFrameImage} alt="" decoding="async" />
+            </div>
+            <div className="showcase-event-card">
+              <span><Sparkles size={16} /></span>
+              <div><strong>La matière prend forme.</strong><small>Vos idées deviennent des pièces uniques</small></div>
+            </div>
           </div>
-          <div className="showcase-hero-note">La matière<br /><em>prend forme.</em></div>
         </section>
 
         <section id="creations" className="showcase-section showcase-creations showcase-reveal">
@@ -225,7 +240,7 @@ function App() {
           </div>
           <div className="showcase-creation-grid">
             {collections.map((collection) => (
-              <article className="showcase-creation" key={collection.number}>
+              <article className={`showcase-creation showcase-creation-${collection.number}`} key={collection.number}>
                 <div className="showcase-creation-image">
                   <img src={collection.image} alt={collection.alt} loading="lazy" decoding="async" />
                   <span>{collection.number}</span>
