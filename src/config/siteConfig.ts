@@ -10,5 +10,6 @@ export const siteConfig = {
   instagram: 'https://www.instagram.com/gsresine?stkn=YjFwdDNrb3NjaGx3',
   facebook: 'https://www.facebook.com/profile.php?id=61594229627587',
   tiktok: 'https://www.tiktok.com/@gsartresine?_r=1&_t=ZP-9A9sB5GUBqg',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/posts/ideogram-ai_introducing-ideogram-45-the-most-precise-ugcPost-7511092976526213120-c4iv',
+  snaptchat: 'https://www.snapchat.com/add/gsartresine?share_id=c-EfRsWdS9Y&locale=fr-FR',
 } as const;

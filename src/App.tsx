@@ -5,98 +5,108 @@ import {
 } from 'lucide-react';
 import { siteConfig } from '@/config/siteConfig';
 import logoImage from './assets/images/IMG-20260913-WA0029.jpg';
+import keychainsImage from './assets/products/gs-portecles-resine.png';
+import pouchImage from './assets/products/gs-pochette-telephone.png';
+import combImage from './assets/products/gs-peigne-resine.png';
+import watchImage from './assets/products/gs-montre-personnalisee.png';
+import chainImage from './assets/products/gs-gourmette-chaine.png';
+import decorImage from './assets/products/gs-deco-resine.png';
+import earringsImage from './assets/products/gs-boucles-resine.png';
+import soapImage from './assets/products/gs-savons-artisanaux.png';
+import vinegarImage from './assets/products/gs-vinaigre-cuisine.png';
+import broomImage from './assets/products/gs-balais-africains.png';
 
 const collections = [
   {
     number: '01',
     title: 'Boucles d’oreilles',
-    detail: 'Formes, pigments et couleurs au choix',
-    image: 'https://images.pexels.com/photos/17225168/pexels-photo-17225168/free-photo-of-red-flowers-encased-in-resin-earrings-hanging-from-flowerpot.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Boucles d’oreilles en résine avec fleurs rouges encapsulées',
+    detail: 'Fleurs, couleurs et formes au choix',
+    image: earringsImage,
+    alt: 'Boucles d’oreilles en résine décorées de fleurs séchées',
   },
   {
     number: '02',
     title: 'Colliers & gourmettes',
-    detail: 'Accessoires à personnaliser',
-    image: 'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Collier présenté sur un fond clair',
+    detail: 'Des accessoires à personnaliser',
+    image: chainImage,
+    alt: 'Gourmette dorée présentée sur un tissu clair',
   },
   {
     number: '03',
     title: 'Peignes & accessoires',
-    detail: 'Détails uniques, finitions brillantes',
-    image: 'https://images.pexels.com/photos/7256649/pexels-photo-7256649.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Détail de création artisanale et accessoires',
+    detail: 'Des finitions brillantes et originales',
+    image: combImage,
+    alt: 'Peigne en résine transparente décoré de fleurs séchées',
   },
   {
     number: '04',
-    title: 'Coques de téléphone',
-    detail: 'Une coque pensée selon vos envies',
-    image: 'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Téléphone et accessoires photographiés en studio',
+    title: 'Pochettes personnalisées',
+    detail: 'Un accessoire fleuri imaginé selon vos envies',
+    image: pouchImage,
+    alt: 'Pochette pour téléphone décorée de fleurs en relief',
   },
   {
     number: '05',
     title: 'Montres personnalisées',
-    detail: 'Une idée cadeau qui se remarque',
-    image: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Montre présentée en gros plan',
+    detail: 'Une idée cadeau pleine de caractère',
+    image: watchImage,
+    alt: 'Montre personnalisée avec cadran effet résine colorée',
   },
   {
     number: '06',
     title: 'Porte-clés en résine',
-    detail: 'Petites créations à offrir ou à garder',
-    image: 'https://images.pexels.com/photos/16137821/pexels-photo-16137821/free-photo-of-golden-handmade-keychain-on-book-page.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Porte-clé artisanal personnalisé',
+    detail: 'Des petits cadeaux à garder près de soi',
+    image: keychainsImage,
+    alt: 'Collection de porte-clés en résine et fleurs séchées',
   },
   {
     number: '07',
-    title: 'Décoration & fleurs',
-    detail: 'Plateaux, inclusions florales et cadeaux',
-    image: 'https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=1100',
-    alt: 'Fleurs colorées pour une inspiration de création',
+    title: 'Objets décoratifs',
+    detail: 'Plateaux, fleurs séchées et pièces uniques',
+    image: decorImage,
+    alt: 'Plateau décoratif en résine transparente avec fleurs séchées',
   },
 ];
 
 const activities = [
   {
     number: '01',
-    title: 'Résine époxy',
-    text: 'Bijoux, accessoires, objets décoratifs et créations personnalisées.',
-    image: 'https://images.pexels.com/photos/17225168/pexels-photo-17225168/free-photo-of-red-flowers-encased-in-resin-earrings-hanging-from-flowerpot.jpeg?auto=compress&cs=tinysrgb&w=1000',
-    alt: 'Boucles d’oreilles avec fleurs encapsulées dans la résine',
+    title: 'Créations en résine époxy',
+    text: 'Bijoux, accessoires, objets décoratifs et pièces personnalisées.',
+    image: keychainsImage,
+    alt: 'Porte-clés en résine décorés de fleurs et de pigments colorés',
     className: 'activity-resin',
   },
   {
     number: '02',
     title: 'Savons artisanaux',
-    text: 'Des savons préparés avec soin pour les gestes du quotidien.',
-    image: 'https://images.pexels.com/photos/3735152/pexels-photo-3735152.jpeg?auto=compress&cs=tinysrgb&w=1000',
-    alt: 'Savons artisanaux présentés dans un décor lumineux',
+    text: 'Des savons préparés avec soin pour le quotidien.',
+    image: soapImage,
+    alt: 'Savons artisanaux aux couleurs naturelles',
     className: 'activity-soap',
   },
   {
     number: '03',
     title: 'Vinaigre de cuisine',
     text: 'Une fabrication artisanale parmi les activités de GS ART.',
-    image: 'https://images.pexels.com/photos/35438467/pexels-photo-35438467/free-photo-of-assorted-vinegar-bottles-on-kitchen-counter.jpeg?auto=compress&cs=tinysrgb&w=1000',
+    image: vinegarImage,
     alt: 'Plusieurs bouteilles de vinaigre sur un comptoir de cuisine',
     className: 'activity-vinegar',
   },
   {
     number: '04',
     title: 'Balais traditionnels africains',
-    text: 'Balais artisanaux aux poignées tressées et colorées.',
-    image: 'https://images.pexels.com/photos/34692814/pexels-photo-34692814/free-photo-of-collection-of-traditional-brooms-with-colorful-handles.jpeg?auto=compress&cs=tinysrgb&w=1000',
+    text: 'Des balais artisanaux aux poignées tressées et colorées.',
+    image: broomImage,
     alt: 'Collection de balais traditionnels avec poignées colorées',
     className: 'activity-broom',
   },
   {
     number: '05',
-    title: 'Décoration & autres',
-    text: 'Des idées utiles et décoratives, conçues avec le même soin.',
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1000',
-    alt: 'Intérieur décoré avec des objets soigneusement choisis',
+    title: 'Décoration & cadeaux',
+    text: 'Des pièces décoratives conçues avec le même soin.',
+    image: decorImage,
+    alt: 'Plateau en résine décoré de fleurs séchées et de feuilles dorées',
     className: 'activity-decor',
   },
 ];
@@ -191,9 +201,9 @@ function App() {
             </div>
           </div>
           <div className="showcase-hero-visual">
-            <img src="https://images.pexels.com/photos/17225168/pexels-photo-17225168/free-photo-of-red-flowers-encased-in-resin-earrings-hanging-from-flowerpot.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Boucles d’oreilles artisanales en résine avec fleurs encapsulées" />
+            <img src={decorImage} alt="Plateau en résine transparente décoré de fleurs séchées" fetchPriority="high" decoding="async" />
             <div className="showcase-image-caption"><span>GS ART</span><span>Pièces réalisées sur mesure</span></div>
-            <span className="showcase-image-index">01 / 03</span>
+            <span className="showcase-image-index">RÉSINE ÉPOXY</span>
           </div>
           <div className="showcase-hero-note">La matière<br /><em>prend forme.</em></div>
         </section>
@@ -204,13 +214,13 @@ function App() {
               <p className="showcase-kicker"><span /> L’univers GS ART</p>
               <h2>Des créations pour<br /><em>chaque envie.</em></h2>
             </div>
-            <p>Boucles d’oreilles, colliers, peignes, coques, montres et porte-clés : découvrez les créations en résine époxy de GS ART.</p>
+            <p>Boucles d’oreilles, colliers, pochettes, peignes, montres et porte-clés : découvrez les créations en résine époxy de GS ART.</p>
           </div>
           <div className="showcase-creation-grid">
             {collections.map((collection) => (
               <article className="showcase-creation" key={collection.number}>
                 <div className="showcase-creation-image">
-                  <img src={collection.image} alt={collection.alt} loading="eager" decoding="async" />
+                  <img src={collection.image} alt={collection.alt} loading="lazy" decoding="async" />
                   <span>{collection.number}</span>
                 </div>
                 <div className="showcase-creation-copy">
@@ -235,7 +245,7 @@ function App() {
           <div className="showcase-activity-grid">
             {activities.map((activity) => (
               <article className={`showcase-activity ${activity.className}`} key={activity.number}>
-                <img src={activity.image} alt={activity.alt} loading="eager" decoding="async" />
+                <img src={activity.image} alt={activity.alt} loading="lazy" decoding="async" />
                 <div className="showcase-activity-shade" />
                 <span className="showcase-activity-number">{activity.number}</span>
                 <div className="showcase-activity-copy">
@@ -292,8 +302,8 @@ function App() {
               <select name="creation" defaultValue="" required>
                 <option value="" disabled>Choisissez une création</option>
                 <option>Boucles d’oreilles</option><option>Porte-clés en résine</option><option>Peigne en résine</option>
-                <option>Collier ou gourmette</option><option>Coque de téléphone</option>
-                <option>Montre ou accessoire</option><option>Objet décoratif</option>
+                <option>Pochette personnalisée</option><option>Collier ou gourmette</option>
+                <option>Montre personnalisée</option><option>Objet décoratif</option>
                 <option>Autre création sur mesure</option>
               </select>
             </label>
